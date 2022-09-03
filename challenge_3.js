@@ -7,10 +7,11 @@
 // isPangram('The five boxing wizards jump quickly') //true
 // isPangram('The five boxing wizards jump quick') //false
 
-function isPangram(arr){
+function isPangram(sentence){
     const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    let sentenceUpperCased = sentence.toUpperCase();
     for(let characteresOfAlplhabet of alphabet){
-        const containsCharactere = arr.toUpperCase().indexOf(characteresOfAlplhabet);
+        const containsCharactere = sentenceUpperCased.indexOf(characteresOfAlplhabet);
         if(containsCharactere === -1)
             return false;
     }
