@@ -11,12 +11,6 @@
 // isValidPassword('dogLuvr123!', 'dogLuvr') //false
 // isValidPassword('hello1', 'dogLuvr') //false
 
-// function isValidPassword(password, username){
-//     if(password.length < 8 || password.indexOf(' ') > 0 || password.includes(username))
-//         return false;
-//     return true;
-// }
-
 function isValidPassword(password, username){
     const tooShort   = password.length < 8;
     const hasSpace   = password.indexOf(' ') > 0;
